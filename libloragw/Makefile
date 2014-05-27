@@ -14,7 +14,7 @@ CFLAGS := -O2 -Wall -Wextra -std=c99 -Iinc -I.
 ### library.cfg configuration file processing
 
 ifeq ($(CFG_SPI),native)
-  CFG_SPI_MSG := Linux native SPI driver (/dev/spidev0.0)
+  CFG_SPI_MSG := Linux native SPI driver (/dev/spidev32766.0)
   CFG_SPI_OPT := CFG_SPI_NATIVE
 else ifeq ($(CFG_SPI),ftdi)
   CFG_SPI_MSG := FTDI SPI-over-USB bridge using libmpsse/libftdi/libusb
